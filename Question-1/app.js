@@ -52,5 +52,44 @@ document.addEventListener("DOMContentLoaded", () => {
 
 // Complete the section on defining elements, data, and primitive functions.
 
-// Start of the section on interacting with forms, tables, and sorting
+// Start of the section on interacting with forms, tables, and sorting.
+
+    form.onsubmit = e => {
+        e.preventDefault();
+        const name = inputMovieName.value.trim();
+        const rate = parseFloat(inputMovieRate.value.trim());
+        if (name && !isNaN(rate)) {
+            movies.push({name, rate});
+            renderMovies();
+            form.reset();
+        } else {
+            alert("Please enter valid name and number");
+        }
+    };
+
+    function sortMovies(col) {
+        if (sortColumn === col) {
+            sortDirection = sortDirection === "asc" ? "desc" : "asc";
+        } else {
+            sortColumn = col;
+            sortDirection = "asc";
+        }
+
+        movies.sort((a, b) => {
+            let valA = col === "name" ? a.name.toLowerCase() : a.rate;
+            let valB = col === "name" ? b.name.toLowerCase() : b.rate;
+
+            if (valA < valB) return sortDirection === "asc" ? -1 : 1;
+            if (valA > valB) return sortDirection === "asc" ? 1 : -1;
+            return 0;
+        });
+
+        renderMovies();
+    }
+
+// interactive sorting
+    nameHeader.onclick = () => sortMovies("name");
+    rateHeader.onclick = () => sortMovies("rate");
+
+    renderMovies(); // اولین بار جدول رو خالی نشون بده
 });
