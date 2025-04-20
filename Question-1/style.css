@@ -1,0 +1,39 @@
+* {
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    font-size: 20px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 40px;
+}
+
+/* Style of Form section */
+.title {
+    margin-bottom: 28px;
+}
+
+.movieForm input, button {
+    margin: 10px;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid rgb(210, 210, 210);
+}
+button{
+    color: #ffff;
+    background-color: #1E88E5;
+    cursor: pointer;
+}
+button:hover {
+    background-color: #42A5F5;
+}
+
+/* Style of Form section*/
