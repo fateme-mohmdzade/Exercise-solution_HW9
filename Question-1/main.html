@@ -16,7 +16,7 @@
         <form class="movieForm">
             <input type="text" id="movieName" placeholder="Name">
             <input type="text" id="movieRate" placeholder="Rate">
-            <button type="submit" class="addButton">Add</button>
+            <button type="submit" class="addButton">Add Movie</button>
         </form>
     </div>
 </header>
@@ -27,12 +27,12 @@
         <table class="movieTable">
             <thead>
             <tr>
-                <th>Name <i class="fas fa-chevron-down"></i></th>
-                <th>Rate <i class="fas fa-chevron-down"></i></th>
+                <th class="name-column">Name <i class="fas fa-chevron-down"></i></th>
+                <th class="rate-column">Rate <i class="fas fa-chevron-down"></i></th>
                 <th>Action</th>
             </tr>
             </thead>
-            <tbody id="movieList">
+            <tbody class="movieList">
             <!--The created rows are placed here.-->
             </tbody>
         </table>
