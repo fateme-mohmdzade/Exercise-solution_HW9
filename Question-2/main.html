@@ -8,22 +8,25 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
+
 <main class="container">
 
     <section class="top">
-        <h1 class="title">Change the password</h1>
-        <p class="subTitle">it is 2020, but password is still a thing</p>
+        <h3 id="title">Change the password</h3>
+        <p id="subTitle">it is 2020, but password is still a thing</p>
     </section>
 
     <section class="bottom">
-        <form>
-            <label for="password">Enter password</label>
+        <form class="form">
+            <label for="password" id="labelPassword">Enter password</label> <br>
             <input type="password" name="password" id="password">
             <i class="fa-solid fa-eye"></i>
             <i class="fa-solid fa-eye-slash"></i>
         </form>
     </section>
+    <div id="error">
 
+    </div>
 </main>
 <script src="app.js"></script>
 </body>
