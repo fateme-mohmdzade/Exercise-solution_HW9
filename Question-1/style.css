@@ -17,6 +17,7 @@ body {
 }
 
 /* Style of Form section */
+
 .title {
     margin-bottom: 28px;
 }
@@ -27,13 +28,39 @@ body {
     border-radius: 5px;
     border: 1px solid rgb(210, 210, 210);
 }
-button{
+
+.addButton {
     color: #ffff;
-    background-color: #1E88E5;
+    background-color: #2E7D32;
     cursor: pointer;
 }
+
 button:hover {
-    background-color: #42A5F5;
+    background-color: #66BB6A;
 }
 
-/* Style of Form section*/
+/* Style of Table section */
+
+.movieTable {
+    background-color: #1E88E5;
+    color: #ffff;
+    border-radius: 5px;
+    padding: 10px;
+    width: 75%;
+}
+
+th i {
+    cursor: pointer;
+}
+
+th i {
+    margin-left: 5px;
+}
+
+.movieTable tbody {
+    background-color: #f9f9f9;
+    color: #333;
+    padding: 8px;
+    text-align: left;
+}
+
