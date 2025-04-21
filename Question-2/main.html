@@ -20,13 +20,15 @@
         <form class="form">
             <label for="password" id="labelPassword">Enter password</label> <br>
             <input type="password" name="password" id="password">
-            <i class="fa-solid fa-eye"></i>
-            <i class="fa-solid fa-eye-slash"></i>
+            <span class="eyeIcon">
+                <i class="fa-solid fa-eye" id="eyeOpen" style="color: #673AB7;"></i>
+                <i class="fa-solid fa-eye-low-vision" id="eyeClose" style="color: #673AB7;"></i>
+           </span>
+            <div id="error">
+                <p id="errorMessage" class="error-message"></p>
+            </div>
         </form>
     </section>
-    <div id="error">
-
-    </div>
 </main>
 <script src="app.js"></script>
 </body>
