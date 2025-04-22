@@ -64,5 +64,5 @@ form #password {
 .error-message {
     font-size: 15px;
     margin-top: 10px;
-    color: #616161;
+    /*color: #616161;*/
 }
